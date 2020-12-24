@@ -48,4 +48,4 @@ export const getItem = (getItemNative ||
 export const setItem = (setItemNative ||
   (() => {
     return Promise.resolve();
-  })) as (key: string, value: string, appGroup: string) => Promise<void>;
+  })) as (key: string, value: any, appGroup: string) => Promise<void>;
